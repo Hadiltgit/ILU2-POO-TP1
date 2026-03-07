@@ -31,8 +31,7 @@ public class Etal {
 				"Le vendeur " + vendeur.getNom() + " quitte son étal, ");
 		int produitVendu = quantiteDebutMarche - quantite;
 		if (produitVendu > 0) {
-			chaine.append(
-					"il a vendu " + produitVendu + " parmi " + produit + ".\n");
+			chaine.append("il a vendu " + produitVendu + " parmi " + produit + " \n");
 		} else {
 			chaine.append("il n'a malheureusement rien vendu.\n");
 		}
@@ -48,7 +47,17 @@ public class Etal {
 	}
 
 	public String acheterProduit(int quantiteAcheter, Gaulois acheteur) {
-		if (etalOccupe) {
+		try {
+			if (quantiteAcheter < 1) {
+	            throw new IllegalArgumentException("La quantité doit être positive !");
+	        }
+
+	        if (acheteur == null) {
+	            throw new NullPointerException("L'acheteur ne peut pas être null !");
+	        }
+	        if (!etalOccupe) {
+	            throw new IllegalStateException("Le vendeur ne peut pas être null !");
+	        }
 			StringBuilder chaine = new StringBuilder();
 			chaine.append(acheteur.getNom() + " veut acheter " + quantiteAcheter
 					+ " " + produit + " à " + vendeur.getNom());
@@ -70,8 +79,11 @@ public class Etal {
 						+ vendeur.getNom() + "\n");
 			}
 			return chaine.toString();
+		
+		}catch(NullPointerException e){
+			e.printStackTrace();
+			return "";
 		}
-		return null;
 	}
 
 	public boolean contientProduit(String produit) {
