@@ -53,11 +53,11 @@ public class Scenario {
 		
      	try {
       		 System.out.println(  village.afficherVillageois()  );
-      		}catch(VillageSansChefException e){
+      	}catch(VillageSansChefException e){
       			e.printStackTrace();
-      		}
+      	}
    		
-     	
+     	//ce n'est pas complit
 	}
 
 }
