@@ -4,21 +4,43 @@ import villagegaulois.Etal;
 public class ScenarioCasDegrade {
 
 	public static void main(String[] args) {
-		Etal etal = new Etal();
+		
+		/*Etal etal = new Etal();
+		etal.libererEtal();
+		System.out.println("Fin du test");*/
+		
+		
+		
+		/*Etal etal = new Etal();
+		Gaulois vendeur = new Gaulois("GOU", 5) ;
+		etal.occuperEtal(vendeur,"fleur", 10);
+		etal.acheterProduit(10, null);
+		System.out.println("Fin du test");*/
+		
+		
+		
+		
+		/*Etal etal = new Etal();
+		Gaulois vendeur = new Gaulois("VEN", 5) ;
+		Gaulois acheteur = new Gaulois("ACH", 5) ;
+		etal.occuperEtal(vendeur,"fleur", 10);
 		try {
-			etal.libererEtal();
-		}catch(NullPointerException e) {
+		   etal.acheterProduit(-10, acheteur);
+		}catch( IllegalArgumentException e) {
 			e.printStackTrace();
 		}
+		System.out.println("Fin du test");*/
+
 		
-		System.out.println("Fin du test");
-		
-		Gaulois obelix = new Gaulois("Obélix", 25);
+		/*Etal etal = new Etal();
+		Gaulois acheteur = new Gaulois("ACH", 5) ;
 		try {
-		 System.out.println(etal.acheterProduit(1, obelix)  );
-		}catch(NullPointerException e){
+		   etal.acheterProduit(10, acheteur);
+		}catch( IllegalStateException e) {
 			e.printStackTrace();
 		}
+		System.out.println("Fin du test");*/
+
 		
    }
 
