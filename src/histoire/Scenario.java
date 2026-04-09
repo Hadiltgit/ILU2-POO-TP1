@@ -66,6 +66,7 @@ public class Scenario {
 				e.printStackTrace();
 		}
 		
+
 		/*Etal etal = new Etal();
 		Gaulois acheteur = new Gaulois("ACH", 5) ;
 		try {
@@ -74,6 +75,14 @@ public class Scenario {
 			e.printStackTrace();
 		}
 		System.out.println("Fin du test");*/
+     	
+
+     	try {
+      		 System.out.println(  village.afficherVillageois()  );
+      	}catch(VillageSansChefException e){
+      			e.printStackTrace();
+      	}
+   		
      	
 	}
 
