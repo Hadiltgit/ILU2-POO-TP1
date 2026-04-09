@@ -25,7 +25,7 @@ public class Scenario {
 		village.ajouterHabitant(obelix);
 		village.ajouterHabitant(druide);
 		village.ajouterHabitant(abraracourcix);
-		//village.afficherVillageois();
+		
 
 		System.out.println(village.rechercherVendeursProduit("fleurs"));
 		System.out.println(village.installerVendeur(bonemine, "fleurs", 20));
@@ -44,20 +44,40 @@ public class Scenario {
 		System.out.println("\r");
      	System.out.println(village.afficherMarche());
      	
-     	Etal etal = new Etal();
-     	try {
-   		 System.out.println(etal.acheterProduit(2, null)  );
-   		}catch(NullPointerException e){
-   			e.printStackTrace();
-   		}
+     	
+     	
+     	
+     	
+
+		/*Etal etal = new Etal();
+		Gaulois vendeur = new Gaulois("VEN", 5) ;
+		Gaulois acheteur = new Gaulois("ACH", 5) ;
+		etal.occuperEtal(vendeur,"fleur", 10);
+		try {
+		   etal.acheterProduit(-10, acheteur);
+		}catch( IllegalArgumentException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Fin du test");*/
+
+		try{
+			village.afficherVillageois();
+		}catch(VillageSansChefException e) {	
+				e.printStackTrace();
+		}
 		
-     	try {
-      		 System.out.println(  village.afficherVillageois()  );
-      	}catch(VillageSansChefException e){
-      			e.printStackTrace();
-      	}
+
+		/*Etal etal = new Etal();
+		Gaulois acheteur = new Gaulois("ACH", 5) ;
+		try {
+		   etal.acheterProduit(10, acheteur);
+		}catch( IllegalStateException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Fin du test");*/
+     	
    		
-     	//ce n'est pas complit
+     	
 	}
 
 }
