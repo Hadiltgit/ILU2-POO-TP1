@@ -11,11 +11,11 @@ public class ScenarioCasDegrade {
 		
 		
 		
-		/*Etal etal = new Etal();
+		Etal etal = new Etal();
 		Gaulois vendeur = new Gaulois("GOU", 5) ;
 		etal.occuperEtal(vendeur,"fleur", 10);
 		etal.acheterProduit(10, null);
-		System.out.println("Fin du test");*/
+		System.out.println("Fin du test");
 		
 		
 		
