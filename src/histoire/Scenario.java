@@ -65,16 +65,12 @@ public class Scenario {
      	System.out.println(village.afficherMarche());
      	
      	
-     	
-     	
      	try{
 			village.afficherVillageois();
 		}catch(VillageSansChefException e) {	
 				e.printStackTrace();
 		}
 
-		
-		
 		
 	
 		try {
@@ -84,10 +80,8 @@ public class Scenario {
 		}
 		System.out.println("Fin du test");
 
-		
-		
-
-		
+     	
+   		
 
      	
 	}

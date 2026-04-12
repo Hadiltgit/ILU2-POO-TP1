@@ -119,7 +119,7 @@ public class Village {
 			String nomG = gaulois.getNom();
 			for (int i = 0; i < etale.length; i++) {
 				String nomV = etale[i].getVendeur().getNom();
-				if (nomG.equals(nomV)) {
+				if (nomG != null && nomG.equals(nomV)) {
 					return etale[i];
 				}
 			}
