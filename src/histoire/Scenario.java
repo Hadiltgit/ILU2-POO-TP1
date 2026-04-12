@@ -77,12 +77,6 @@ public class Scenario {
 		System.out.println("Fin du test");*/
      	
 
-     	try {
-      		 System.out.println(  village.afficherVillageois()  );
-      	}catch(VillageSansChefException e){
-      			e.printStackTrace();
-      	}
-   		
      	
 	}
 
